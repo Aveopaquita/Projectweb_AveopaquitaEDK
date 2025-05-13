@@ -1,0 +1,284 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+header p {
+  font-size: 16px;
+  color: #ccc;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #f4c10f;
+}
+
+/* Hero */
+.hero {
+  background: url('img/hero.jpg') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+.hero .overlay {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 25px;
+  background-color: #f4c10f;
+  color: black;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #e0af00;
+}
+
+/* Features */
+.features {
+  background-color: #222;
+  padding: 60px 0;
+}
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features .container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.feature img {
+  width: 50%;
+  max-width: 330px;
+  border-radius: 15px;
+}
+.feature h3 {
+  margin-top: 20px;
+  color: #f4c10f;
+}
+
+/* Rooms */
+.rooms {
+  background-color: #fff;
+  color: #111;
+  padding: 60px 0;
+  text-align: center;
+}
+.room-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.room img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+.room h4 {
+  margin-top: 10px;
+}
+
+/* Restaurant */
+.Restaurant {
+  background-color: #222;
+  color: #f4c10f;
+  padding: 60px 0;
+  text-align: center;
+}
+.Restaurant-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.Restaurant img {
+  width: 150%;
+  max-width: 300px;
+  border-radius: 20px;
+}
+.Restaurant h5 {
+  margin-top: 10px;
+}
+
+/* Events */
+.Events {
+  background-color: #fff;
+  color: #111;
+  padding: 60px 0;
+  text-align: center;
+}
+.Events-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.Events img {
+  width: 100%;
+  max-width: 270px;
+  border-radius: 10px;
+}
+.Events h4 {
+  margin-top: 10px;
+}
+
+/* Gallery */
+.gallery {
+  background-color: #222;
+  color: #f4c10f;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Kontak */
+.contact {
+  background-color: #f8f8f8;
+  color: #111;
+  padding: 60px 0;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  padding: 10px 25px;
+  background-color: #f4c10f;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #d3a700;
+}
+
+/* Profil Pembuat Web */
+.creator-profile {
+  text-align: center;
+  padding-top: 20px;
+}
+.creator-profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+.creator-profile h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.creator-profile p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Footer */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  color: #aaa;
+  font-size: 14px;
+}
